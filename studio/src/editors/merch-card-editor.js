@@ -2023,7 +2023,7 @@ class MerchCardEditor extends LitElement {
                         @restore-field="${(e) => this.#restoreWhatsIncludedItem(e, 'bullets')}"
                     >
                         <template>
-                            <mas-included-field iconlibrary></mas-included-field>
+                            <mas-included-field iconlibrary item-status></mas-included-field>
                         </template>
                     </mas-multifield>
                     <mas-multifield
@@ -2035,7 +2035,7 @@ class MerchCardEditor extends LitElement {
                         @restore-field="${(e) => this.#restoreWhatsIncludedItem(e, 'values')}"
                     >
                         <template>
-                            <mas-included-field></mas-included-field>
+                            <mas-included-field item-status></mas-included-field>
                         </template>
                     </mas-multifield>
                     ${this.renderWhatsIncludedStatusIndicator()}
